@@ -4,12 +4,9 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>PruebaParaAndroid</title>
+  <title>Index world</title>
   <style>
     html {
-      line-height: 1.5;
-      font-family: Georgia, serif;
-      font-size: 20px;
       color: #1a1a1a;
       background-color: #fdfdfd;
     }
@@ -21,17 +18,23 @@
       padding-top: 50px;
       padding-bottom: 50px;
       hyphens: auto;
-      word-wrap: break-word;
+      overflow-wrap: break-word;
       text-rendering: optimizeLegibility;
       font-kerning: normal;
     }
     @media (max-width: 600px) {
       body {
         font-size: 0.9em;
-        padding: 1em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
       }
     }
     @media print {
+      html {
+        background-color: white;
+      }
       body {
         background-color: transparent;
         color: black;
@@ -81,9 +84,10 @@
       color: #606060;
     }
     code {
-      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
+      hyphens: manual;
     }
     pre {
       margin: 1em 0;
@@ -92,6 +96,7 @@
     pre code {
       padding: 0;
       overflow: visible;
+      overflow-wrap: normal;
     }
     .sourceCode {
      background-color: transparent;
@@ -133,38 +138,65 @@
     #TOC li {
       list-style: none;
     }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
     #TOC a:not(:hover) {
       text-decoration: none;
     }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
   </style>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="/usr/share/javascript/mathjax/MathJax.js"
+  type="text/javascript"></script>
 </head>
 <body>
+<header id="title-block-header">
+<h1 class="title">Index world</h1>
+</header>
 <ol>
-<li><p>En un experimento, dos grupos de estudiantes trabajan con un sistema masa-resorte, cada uno. El resorte del grupo 1 responde al modelo <span class="math inline">\(f_1(t)=2\sin(0.6 t+0.93)\)</span>. El resorte del grupo 2 responde al modelo <span class="math inline">\(f_2(t)=1.5\cos(0.8 t)+2 \sin(0.8 t)\)</span>.</p>
+<li><p>En un experimento, dos grupos de estudiantes trabajan con un
+sistema masa-resorte, cada uno. El resorte del grupo 1 responde al
+modelo <span class="math inline">\(f_1(t)=2\sin(0.6 t+0.93)\)</span>. El
+resorte del grupo 2 responde al modelo <span
+class="math inline">\(f_2(t)=1.5\cos(0.8 t)+2 \sin(0.8 t)\)</span>.</p>
 <p><img src="ImagenTest.png" alt="image" /></p>
 <p>Listas anidadas</p>
 <ol>
-<li><p>Decidí si el gráfico corresponde a alguno de los dos modelos, explicando cómo te das cuenta y explicá también cuál de los dos resortes fue más apartado de su posición de equilibrio, en el instante en que fue liberado.</p></li>
+<li><p>Decidí si el gráfico corresponde a alguno de los dos modelos,
+explicando cómo te das cuenta y explicá también cuál de los dos resortes
+fue más apartado de su posición de equilibrio, en el instante en que fue
+liberado.</p></li>
 <li><p>Explicá:</p>
 <ol>
-<li><p>¿Cuál de los dos resortes fue lanzado con mayor velocidad?</p></li>
-<li><p>¿Cuál de los dos tarda menos tiempo en hacer una oscilación completa?</p></li>
+<li><p>¿Cuál de los dos resortes fue lanzado con mayor
+velocidad?</p></li>
+<li><p>¿Cuál de los dos tarda menos tiempo en hacer una oscilación
+completa?</p></li>
 <li><p>¿Cuál de los dos llega a estirarse más al oscilar?</p></li>
 </ol></li>
 </ol></li>
 </ol>
 <p>Algunas ecuaciones:</p>
 <p><span class="math display">\[\int_a^b f(x) dx=F(b)-F(a)\]</span></p>
-<p>La misma ecuación <span class="math inline">\(\int_a^b f(x) dx=F(b)-F(a)\)</span> en el medio del texto.</p>
+<p>La misma ecuación <span class="math inline">\(\int_a^b f(x)
+dx=F(b)-F(a)\)</span> en el medio del texto.</p>
+<script src="js/script.js"></script>
 </body>
 </html>
